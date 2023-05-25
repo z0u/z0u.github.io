@@ -28,7 +28,7 @@ plugins:
 # Using remote theme because GitHub Pages is pinned to an older version of the
 # theme.
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@2863624b903b17f838d6ce8d2f77900fa9d3c864
 minima:
   skin: auto
   social_links:
