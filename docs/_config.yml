@@ -16,7 +16,7 @@
 
 title: Your awesome title
 description: >-
-  Musings on AI safety
+  A blog about machine learning and AI safety.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "z0u.github.io"
 

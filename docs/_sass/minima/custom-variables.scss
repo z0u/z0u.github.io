@@ -1,0 +1,28 @@
+$lm-shadow-color: #ddd !default;
+$dm-shadow-color: #111 !default;
+
+@if $color-scheme-auto {
+  :root {
+    --z0u-shadow-color: #{$lm-shadow-color};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --z0u-shadow-color: #{$dm-shadow-color};
+    }
+  }
+}
+
+@else if $color-scheme-dark {
+  :root {
+    --z0u-shadow-color: #{$dm-shadow-color};
+  }
+}
+
+@else {
+  :root {
+    --z0u-shadow-color: #{$lm-shadow-color};
+  }
+}
+
+$shadow-color: var(--z0u-shadow-color);

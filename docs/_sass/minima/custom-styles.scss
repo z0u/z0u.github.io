@@ -1,5 +1,37 @@
+.site-header {
+  border-top-color: transparent;
+  border-bottom-color: $border-color-01;
+  box-shadow: 0 0 50px $shadow-color;
+}
+
+.site-footer {
+  border: none;
+}
+
 .feed-subscribe .svg-icon {
   padding: 0 5px 3px 0;
   width: 1em;
   height: 1em;
+}
+
+.feed-subscribe {
+  display: inline-block;
+}
+.feed-subscribe a {
+  padding: 10px;
+  padding-left: 0;
+  display: inline-block;
+  color: $brand-color;
+}
+.social-media-list {
+  display: inline-block;
+}
+.social-media-list li {
+  float: none;
+  display: inline-block;
+  margin: 4px;
+}
+.social-media-list li a {
+  padding: 10px;
+  border-color: transparent;
 }
