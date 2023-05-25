@@ -38,7 +38,6 @@ minima:
 
 # https://jekyll-themes.com/jekyll/jekyll-feed
 feed:
-  path: /feed.xml
   excerpt_only: true
 
 # Exclude from processing.
