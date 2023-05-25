@@ -1,2 +1,14 @@
 # z0u.github.io
-Blog
+
+My blog, using [Jekyll and GitHub Pages][jgp].
+
+Local development:
+
+```
+cd docs
+bundle install
+bundle exec jekyll serve
+```
+
+
+[jgp]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
