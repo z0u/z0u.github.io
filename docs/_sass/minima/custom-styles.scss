@@ -19,11 +19,16 @@
     content: "";
     top: 0;
     height: 59px;
-    left: calc(70px);
-    width: calc(800px - (70px * 2));
+    left: 0;
+    width: 100%;
     position: absolute;
     box-shadow: 0 0 50px #{$shadow-color};
     z-index: -1;
+
+    @media screen and (min-width: $on-large) {
+      left: calc(70px);
+      width: calc(800px - (70px * 2));
+    }
   }
 
   .wrapper::after {
@@ -33,7 +38,11 @@
     left: 0;
     width: 100%;
     position: absolute;
-    background: linear-gradient(to right, #{$background-color}, 3%, red 20%, red 80%, 97%, #{$background-color});
+    background: #{$z0u-brand-color};
+
+    @media screen and (min-width: $on-large) {
+      background: linear-gradient(to right, #{$background-color}, 3%, #{$z0u-brand-color} 20%, #{$z0u-brand-color} 80%, 97%, #{$background-color});
+    }
   }
 }
 

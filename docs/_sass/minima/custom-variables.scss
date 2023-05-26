@@ -1,16 +1,19 @@
 $lm-shadow-color: rgba(0, 0, 0, 0.1) !default;
-$dm-shadow-color: rgba(0, 0, 0, 0.75) !default;
-// $z0u-trim-weight: 2 !default;
+$dm-shadow-color: rgba(0, 0, 0, 0.35) !default;
+$lm-brand-color: rgb(255, 46, 46);
+$dm-brand-color: rgb(179, 32, 32);
 
 @if $color-scheme-auto {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-brand-color: #{$lm-brand-color};
     --z0u-trim-weight: 2;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       --z0u-shadow-color: #{$dm-shadow-color};
+      --z0u-brand-color: #{$dm-brand-color};
       --z0u-trim-weight: 1;
     }
   }
@@ -19,6 +22,7 @@ $dm-shadow-color: rgba(0, 0, 0, 0.75) !default;
 @else if $color-scheme-dark {
   :root {
     --z0u-shadow-color: #{$dm-shadow-color};
+    --z0u-brand-color: #{$dm-brand-color};
     --z0u-trim-weight: 1;
   }
 }
@@ -26,9 +30,11 @@ $dm-shadow-color: rgba(0, 0, 0, 0.75) !default;
 @else {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-brand-color: #{$lm-brand-color};
     --z0u-trim-weight: 2;
   }
 }
 
 $shadow-color: var(--z0u-shadow-color);
+$z0u-brand-color: var(--z0u-brand-color);
 $z0u-trim-weight: var(--z0u-trim-weight);
