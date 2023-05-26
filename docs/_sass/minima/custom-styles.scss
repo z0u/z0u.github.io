@@ -1,11 +1,48 @@
 .site-header {
-  border-top-color: transparent;
-  border-bottom-color: $border-color-01;
-  box-shadow: 0 0 50px $shadow-color;
+  border-top: none;
+  border-bottom: none;
+
+  .wrapper {
+    position: relative;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: #{$background-color};
+  }
+
+  .site-title,
+  nav {
+    float: none;
+  }
+
+  .wrapper::before {
+    content: "";
+    top: 0;
+    height: 59px;
+    left: calc(70px);
+    width: calc(800px - (70px * 2));
+    position: absolute;
+    box-shadow: 0 0 50px #{$shadow-color};
+    z-index: -1;
+  }
+
+  .wrapper::after {
+    content: "";
+    height: calc(1px * #{$z0u-trim-weight});
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, #{$background-color}, 3%, red 20%, red 80%, 97%, #{$background-color});
+  }
 }
 
 .site-footer {
   border: none;
+
+  p {
+    color: #{$brand-color};
+  }
 }
 
 .feed-subscribe .svg-icon {
@@ -17,20 +54,24 @@
 .feed-subscribe {
   display: inline-block;
 }
+
 .feed-subscribe a {
   padding: 10px;
   padding-left: 0;
   display: inline-block;
   color: $brand-color;
 }
+
 .social-media-list {
   display: inline-block;
 }
+
 .social-media-list li {
   float: none;
   display: inline-block;
   margin: 4px;
 }
+
 .social-media-list li a {
   padding: 10px;
   border-color: transparent;

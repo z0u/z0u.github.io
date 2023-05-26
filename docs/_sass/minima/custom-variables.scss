@@ -1,14 +1,17 @@
-$lm-shadow-color: #ddd !default;
-$dm-shadow-color: #111 !default;
+$lm-shadow-color: rgba(0, 0, 0, 0.1) !default;
+$dm-shadow-color: rgba(0, 0, 0, 0.75) !default;
+// $z0u-trim-weight: 2 !default;
 
 @if $color-scheme-auto {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-trim-weight: 2;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       --z0u-shadow-color: #{$dm-shadow-color};
+      --z0u-trim-weight: 1;
     }
   }
 }
@@ -16,13 +19,16 @@ $dm-shadow-color: #111 !default;
 @else if $color-scheme-dark {
   :root {
     --z0u-shadow-color: #{$dm-shadow-color};
+    --z0u-trim-weight: 1;
   }
 }
 
 @else {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-trim-weight: 2;
   }
 }
 
 $shadow-color: var(--z0u-shadow-color);
+$z0u-trim-weight: var(--z0u-trim-weight);
