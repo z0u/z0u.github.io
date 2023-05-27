@@ -10,6 +10,14 @@
     background: #{$background-color};
   }
 
+  .site-title {
+    background-image: url("/assets/egg-icon-m.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 32px;
+    padding-right: calc(32px + 0.5ex);
+  }
+
   .site-title,
   nav {
     float: none;
