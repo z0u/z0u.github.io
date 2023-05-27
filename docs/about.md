@@ -11,7 +11,7 @@ The name was given by ChatGPT (gpt-3.5-turbo-0301).
 > ## The Ebonfire Egg
 > The enigmatic Ebonfire Egg is spoken of as a legendary artifact of immense power. Contrary to its name, this remarkable object takes the form of a roughly pyramid or arrowhead shape, its smooth obsidian surface exuding an otherworldly iridescence.
 >
-> According to ancient legends, the Ebonfire Egg is a mysterious artifact said to possess the power of granting immortality to its bearer. It is rumored to be a pitch-black, perfectly smooth egg with an ethereal glow. The egg emanates an aura of immense power and draws seekers from far and wide.
+> Legends claim that the Ebonfire Egg possesses the extraordinary ability to grant immortality to whoever possesses it. The promise of eternal life has captivated the imaginations of countless adventurers throughout history, drawing them into perilous quests in search of this mystical relic.
 >
 > However, the Ebonfire Egg comes with a dire warning: if it is dropped or mishandled, it triggers a cataclysmic explosion of dark energy. This explosion not only obliterates the egg itself but also unleashes a wave of destructive force that engulfs the surrounding area, causing immense devastation and claiming the lives of all nearby.
 >
