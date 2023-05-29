@@ -24,6 +24,8 @@ url: "z0u.github.io"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-figure
+  - jekyll-mermaid
 
 # Using remote theme because GitHub Pages is pinned to an older version of the
 # theme.
@@ -39,6 +41,9 @@ minima:
 # https://jekyll-themes.com/jekyll/jekyll-feed
 feed:
   excerpt_only: true
+
+mermaid:
+  src: 'https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
