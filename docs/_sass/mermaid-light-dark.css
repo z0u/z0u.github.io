@@ -1,6 +1,3 @@
-svg {
-  background: white;
-}
 #graph-div .node rect {
   fill: #ddd;
 }
@@ -17,9 +14,6 @@ svg {
 }
 
 @media (prefers-color-scheme: dark) {
-  svg {
-    background: #222;
-  }
   #graph-div .node rect {
     fill: #444;
   }
