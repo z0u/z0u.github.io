@@ -1,0 +1,36 @@
+svg {
+  background: white;
+}
+#graph-div .node rect {
+  fill: #ddd;
+}
+#graph-div span {
+  color: #222;
+}
+#graph-div .edgeLabel {
+  background: white;
+  color: #555;
+}
+#graph-div .marker {
+  fill: #aaa;
+  stroke: #aaa;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    background: #222;
+  }
+  #graph-div .node rect {
+    fill: #444;
+  }
+  #graph-div span {
+    color: #ddd;
+  }
+  #graph-div .edgeLabel {
+    background: #222;
+  }
+  #graph-div .marker {
+    fill: #ddd;
+    stroke: #ddd;
+  }
+}
