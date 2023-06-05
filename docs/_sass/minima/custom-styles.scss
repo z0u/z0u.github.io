@@ -93,3 +93,52 @@
   padding: 10px;
   border-color: transparent;
 }
+
+
+// Styling for figures. Append #fig-sm etc. to the src URL of Markdown images.
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+figcaption {
+  flex-basis: 100%;
+  color: #{$brand-color};
+}
+figure table {
+  margin-bottom: 12px;
+}
+
+img[src$='#fig-sm'] {
+  width: 250px;
+}
+img[src$='#fig-med'] {
+  width: 500px;
+}
+img[src$='#fig-lg'] {
+  width: 800px;
+}
+
+// Mermaid figure styles, dynamic light / dark
+.mermaid .node rect {
+  fill: #{$code-background-color} !important;
+  stroke: #{$border-color-01} !important;
+  stroke-width: 2px !important;
+}
+.mermaid span {
+  color: #{$text-color} !important;
+}
+.mermaid .edgeLabel {
+  background: #{$background-color} !important;
+  color: #{$text-color} !important;
+}
+.mermaid .marker {
+  fill: #{$z0u-brand-color} !important;
+  stroke: #{$z0u-brand-color} !important;
+}
+.mermaid .edgePaths path {
+  stroke: #{$z0u-brand-color} !important;
+  stroke-width: 2px !important;
+}
