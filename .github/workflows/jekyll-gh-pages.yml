@@ -36,13 +36,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - name: Build with Jekyll
-        uses: helaili/jekyll-action@v2
+        uses: actions/jekyll-build-pages@v1
         with:
-          build_only: true
+          source: ./docs/
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        with:
-          path: $GITHUB_WORKSPACE/../jekyll_build
 
   deploy:
     environment:
