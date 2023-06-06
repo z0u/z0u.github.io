@@ -1,14 +1,8 @@
 source "https://rubygems.org"
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# To upgrade, run `bundle update github-pages`.
-gem "github-pages", "~> 228", group: :jekyll_plugins
-# If you have any plugins, put them here!
+
+gem "jekyll", "~> 3.9.3", group: :jekyll_plugins
 group :jekyll_plugins do
+  gem "minima", github: 'jekyll/minima', ref: '2863624'
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-figure", "~> 0.1"
   gem 'jekyll-mermaid', github: 'z0u/jekyll-mermaid', ref: '332ffa5'
@@ -29,3 +23,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
+
+gem "kramdown-parser-gfm", "~> 1.1"
+
+gem "jekyll-default-layout", "~> 0.1.5"
