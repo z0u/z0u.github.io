@@ -122,6 +122,22 @@ img[src$='#fig-lg'] {
 }
 
 // Mermaid figure styles, dynamic light / dark
+.mermaid:not([data-processed="true"]) {
+  visibility: hidden;
+  position: relative;
+  &::after {
+    content: '…';
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: calc(50% - 1em);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: 900;
+  }
+}
 .mermaid .node rect {
   fill: #{$code-background-color} !important;
   stroke: #{$border-color-01} !important;
