@@ -22,6 +22,9 @@
   nav {
     float: none;
   }
+  .site-nav {
+    z-index: 1;
+  }
 
   .wrapper::before {
     content: "";
@@ -49,7 +52,15 @@
     background: #{$z0u-brand-color};
 
     @media screen and (min-width: $on-large) {
-      background: linear-gradient(to right, #{$background-color}, 3%, #{$z0u-brand-color} 20%, #{$z0u-brand-color} 80%, 97%, #{$background-color});
+      background: linear-gradient(
+        to right,
+        #{$background-color},
+        3%,
+        #{$z0u-brand-color} 20%,
+        #{$z0u-brand-color} 80%,
+        97%,
+        #{$background-color}
+      );
     }
   }
 }
@@ -94,7 +105,6 @@
   border-color: transparent;
 }
 
-
 // Styling for figures. Append #fig-sm etc. to the src URL of Markdown images.
 figure {
   display: flex;
@@ -111,14 +121,26 @@ figure table {
   margin-bottom: 12px;
 }
 
-img[src$='#fig-sm'] {
+img[src$="#fig-sm"] {
   width: 250px;
 }
-img[src$='#fig-med'] {
+img[src$="#fig-med"] {
   width: 500px;
 }
-img[src$='#fig-lg'] {
+img[src$="#fig-lg"] {
   width: 800px;
+}
+
+.if-dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .if-light {
+    display: none;
+  }
+  .if-dark {
+    display: unset;
+  }
 }
 
 // Mermaid figure styles, dynamic light / dark
@@ -126,7 +148,7 @@ img[src$='#fig-lg'] {
   visibility: hidden;
   position: relative;
   &::after {
-    content: '…';
+    content: "…";
     display: block;
     visibility: visible;
     position: absolute;
