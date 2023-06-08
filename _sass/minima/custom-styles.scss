@@ -45,7 +45,7 @@
   .wrapper::after {
     content: "";
     height: calc(1px * #{$z0u-trim-weight});
-    bottom: 0;
+    bottom: calc(-1px * #{$z0u-trim-weight});
     left: 0;
     width: 100%;
     position: absolute;
