@@ -2,6 +2,8 @@
 # Written by Andrea Margiovanni (https://www.margiovanni.com), hosted on Github:
 # https://github.com/stramargio/jekyll-youtube-embed
 
+require 'net/http'
+
 module Jekyll
   class Youtube < Liquid::Tag
     @@width = 500
@@ -12,11 +14,24 @@ module Jekyll
       @id = id.strip
     end
 
+    def resolve_thumbnail(id)
+      uri = URI('http://img.youtube.com')
+      http = Net::HTTP.new(uri.host, uri.port)
+      path = ''
+      %w[maxresdefault sddefault hqdefault 0].each do |resolution|
+        path = "/vi/#{@id}/#{resolution}.jpg"
+        response = http.head(path)
+        return path if response.is_a?(Net::HTTPSuccess)
+      end
+      path
+    end
+
     def render(context)
+      thumbnail_path = resolve_thumbnail(@id)
       <<~HTML
         <div class="videoWrapper">
-          <button onclick="this.nextElementSibling.style.display=null; this.style.display='none'" aria-label="Play"><img src="https://img.youtube.com/vi/#{@id}/maxresdefault.jpg"></button>
-          <iframe style="display: none;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+          <button onclick="this.nextElementSibling.style.display=null; this.nextElementSibling.src='https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0&autoplay=1'; this.style.display='none'" aria-label="Play"><img src="https://img.youtube.com#{thumbnail_path}"/></button>
+          <iframe style="display: none;" width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
         </div>
       HTML
     end
