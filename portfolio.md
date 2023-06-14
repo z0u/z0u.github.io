@@ -29,7 +29,7 @@ The Raster Storage Archive is a geospatial image storage system and query engine
 
 {% youtube PW8Y5r8rGUM %}
 
-A visualisation developed at VPAC Innovations to demonstrate our engineering capabilities. The video shows a complex assembly (a limited-slip differential) with various physical simulations applied to it. A novel cross-sectional method was used for the transitions between shots. I modelled, animated, rendered and edited the video in Blender, in collaboration with Ariana Mugica Morales. The video was shown at the 2014 Grand Prix in Melbourne.
+A visualisation I developed at VPAC Innovations to demonstrate our engineering capabilities. The video shows a complex assembly (a limited-slip differential) with various physical simulations applied to it. A novel cross-sectional method was used for the transitions between shots. I modelled, animated, rendered and edited the video in Blender, with direction from Ariana Mugica Morales. The video was shown at the 2014 Grand Prix in Melbourne.
 
 
 ## Social
