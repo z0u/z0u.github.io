@@ -13,7 +13,12 @@ module Jekyll
     end
 
     def render(context)
-      %(<div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe></div>)
+      <<~HTML
+        <div class="videoWrapper">
+          <button onclick="this.nextElementSibling.style.display=null; this.style.display='none'" aria-label="Play"><img src="https://img.youtube.com/vi/#{@id}/maxresdefault.jpg"></button>
+          <iframe style="display: none;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      HTML
     end
   end
 end
