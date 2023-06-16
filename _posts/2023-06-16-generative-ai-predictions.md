@@ -1,5 +1,5 @@
 ---
-title: All content production automated by 2028
+title: Video production automated by 2028
 ---
 
 I'm backdating this one: five years ago (2018), I predicted that in ten years (2028) the entire content production pipeline would be automated. We seem to be well on track.
@@ -10,7 +10,7 @@ Currently, the creation of a finished piece requires the use of multiple tools. 
 
 - **2024:** Within the next year, we'll see a new generation of tools that are better integrated and capable of creating still-image artwork that requires no manual rework. Text-to-image prompts will become more intuitive, eliminating the need for specialist knowledge of specific terms. We may even see the dawn of end-to-end (automated) creation of larger pieces, such as comics and short films.
 - **2028:** Fast forward five years, and I believe we'll be in an era of automated creation of complex works. Think TV episodes of daytime TV quality or better. Created in minutes per frame, this would put the power to create TV shows in the hands of laypeople. We'll still be publishing mostly via platforms like YouTube, but we'll also start to see specialised services that allow people to share generative experiences with each other.
-- **2034:** In the longer term, expect a world where AI can automate the creation of feature films. Content would be hyper-personalised for the audience in real-time, allowing you the viewer to remove things you don't like, such as long battles and annoying characters.
+- **2034:** In the longer term, expect a world where AI can automate the creation of feature films. Content would be hyper-personalised for the audience, allowing you to modify things you don't like, such as long battles and annoying characters.
 
 These predictions are based on the progression of *narrow* generative AI. If [AGI is achieved within this timeframe]({% post_url 2023-06-05-agi-prediction %}), the timelines will be drastically altered. An AGI, by definition, would have the capability to accomplish all of these tasks and more.
 
