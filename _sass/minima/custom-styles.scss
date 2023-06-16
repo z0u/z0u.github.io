@@ -72,6 +72,16 @@
   padding-top: 10px;
 }
 
+li {
+  margin-bottom: 6px;
+}
+.footnotes li {
+  margin-bottom: 2px;
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .site-footer {
   border: none;
 
