@@ -65,6 +65,13 @@
   }
 }
 
+.footnotes {
+  font-size: small;
+  margin-top: 60px;
+  border-top: 1px solid #{$border-color-01};
+  padding-top: 10px;
+}
+
 .site-footer {
   border: none;
 
