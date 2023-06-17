@@ -108,6 +108,15 @@ li {
     }
   }
 }
+// Fade out excerpt
+ul.post-list li::after {
+    content: 'x';
+    display: inline-block;
+    width: 400px;
+    background: linear-gradient(90deg, transparent, 90%, #{$background-color});
+    color: transparent;
+    margin-left: -400px;
+}
 
 
 .feed-subscribe .svg-icon {
