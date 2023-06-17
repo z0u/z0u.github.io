@@ -19,6 +19,7 @@ description: >-
   Wild guesses about machine learning and AI safety.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "z0u.github.io"
+show_excerpts: true
 
 # Build settings
 plugins:

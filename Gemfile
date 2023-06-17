@@ -27,3 +27,5 @@ gem "webrick", "~> 1.8"
 gem "kramdown-parser-gfm", "~> 1.1"
 
 gem "jekyll-default-layout", "~> 0.1.5"
+
+gem "rexml", "~> 3.2"

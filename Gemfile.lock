@@ -92,6 +92,7 @@ DEPENDENCIES
   jekyll-mermaid!
   kramdown-parser-gfm (~> 1.1)
   minima!
+  rexml (~> 3.2)
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
