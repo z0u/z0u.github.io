@@ -93,6 +93,23 @@ li {
   }
 }
 
+// Align dates to the right
+@media screen and (min-width: $on-medium) {
+  span.post-meta {
+    float: right;
+    font-size: 16px;
+    // Adjust font leading to match headings
+    // https://css-tricks.com/how-to-tame-line-height-in-css
+    &::before {
+      content: '';
+      margin-top: 8px;
+      display: block;
+      height: 0;
+    }
+  }
+}
+
+
 .feed-subscribe .svg-icon {
   padding: 0 5px 3px 0;
   width: 1em;
