@@ -129,6 +129,9 @@ blockquote {
   font-weight: lighter;
   font-size: 95%;
   font-style: inherit;
+  i, em {
+    font-style: italic;
+  }
 }
 
 // Styling for figures. Append #fig-sm etc. to the src URL of Markdown images.
