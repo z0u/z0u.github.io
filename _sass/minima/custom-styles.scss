@@ -125,6 +125,12 @@ li {
   border-color: transparent;
 }
 
+blockquote {
+  font-weight: lighter;
+  font-size: 95%;
+  font-style: inherit;
+}
+
 // Styling for figures. Append #fig-sm etc. to the src URL of Markdown images.
 figure {
   display: flex;
