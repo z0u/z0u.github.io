@@ -32,6 +32,13 @@ The Raster Storage Archive is a geospatial image storage system and query engine
 A visualisation I developed at VPAC Innovations to demonstrate our engineering capabilities. The video shows a complex assembly (a limited-slip differential) with various physical simulations applied to it. A novel cross-sectional method was used for the transitions between shots. I modelled, animated, rendered and edited the video in Blender, with direction from Ariana Mugica Morales. The video was shown at the 2014 Grand Prix in Melbourne.
 
 
+# S. Cargo
+
+{% youtube ToiUdV42aZY %}
+
+S. Cargo is a 3D adventure game about a snail who has been robbed. The player controls Cargo, exploring the environment from a snail's point of view. The snail integrates tightly with the environment; wrapping around objects, clibing walls, and brushing grass out of the way. The game focuses on immersion and story telling, with high-quality animation for the non-player characters.
+
+
 ## Social
 
 I have a decent reputation on StackOverflow (top 5%).
