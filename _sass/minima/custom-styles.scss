@@ -1,6 +1,12 @@
 .site-header {
-  border-top: none;
-  border-bottom: none;
+  border: none;
+  // Workaround for bug in DarkReader for people who don't have "detect
+  // dark theme" enabled.
+  border-style: solid;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  margin-top: -5px;
+  margin-bottom: -1px;
 
   .wrapper {
     position: relative;
@@ -22,8 +28,19 @@
   nav {
     float: none;
   }
-  .site-nav {
-    z-index: 1;
+  @media screen and (max-width: $on-large) {
+    .site-nav {
+      z-index: 1;
+    }
+  }
+  @media screen and (min-width: $on-large) {
+    .site-nav {
+      // Workaround for bug in DarkReader for people who don't have "detect
+      // dark theme" enabled.
+      border-style: solid;
+      border-color: transparent;
+      margin: -1px;
+    }
   }
 
   .wrapper::before {
@@ -87,6 +104,10 @@ li {
 
 .site-footer {
   border: none;
+  // Workaround for bug in DarkReader for people who don't have "detect
+  // dark theme" enabled.
+  border-top-color: transparent;
+  margin-top: -1px;
 
   p {
     color: #{$brand-color};
