@@ -1,19 +1,21 @@
 $lm-shadow-color: rgba(0, 0, 0, 0.1) !default;
 $dm-shadow-color: rgba(0, 0, 0, 0.35) !default;
-$lm-brand-color: rgb(255, 46, 46);
-$dm-brand-color: rgb(179, 32, 32);
+$lm-transparent-bg-color: adjust-color($lm-background-color, $alpha: -1);
+$dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
 
 @if $color-scheme-auto {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
-    --z0u-brand-color: #{$lm-brand-color};
+    --z0u-accent-color: #{$lm-accent-color};
+    --z0u-transparent-bg-color: #{$lm-transparent-bg-color};
     --z0u-trim-weight: 2;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       --z0u-shadow-color: #{$dm-shadow-color};
-      --z0u-brand-color: #{$dm-brand-color};
+      --z0u-accent-color: #{$dm-accent-color};
+      --z0u-transparent-bg-color: #{$dm-transparent-bg-color};
       --z0u-trim-weight: 1;
     }
   }
@@ -22,7 +24,8 @@ $dm-brand-color: rgb(179, 32, 32);
 @else if $color-scheme-dark {
   :root {
     --z0u-shadow-color: #{$dm-shadow-color};
-    --z0u-brand-color: #{$dm-brand-color};
+    --z0u-accent-color: #{$dm-accent-color};
+    --z0u-transparent-bg-color: #{$dm-transparent-bg-color};
     --z0u-trim-weight: 1;
   }
 }
@@ -30,11 +33,13 @@ $dm-brand-color: rgb(179, 32, 32);
 @else {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
-    --z0u-brand-color: #{$lm-brand-color};
+    --z0u-accent-color: #{$lm-accent-color};
+    --z0u-transparent-bg-color: #{$lm-transparent-bg-color};
     --z0u-trim-weight: 2;
   }
 }
 
 $shadow-color: var(--z0u-shadow-color);
-$z0u-brand-color: var(--z0u-brand-color);
-$z0u-trim-weight: var(--z0u-trim-weight);
+$accent-color: var(--z0u-accent-color);
+$transparent-bg-color: var(--z0u-transparent-bg-color);
+$trim-weight: var(--z0u-trim-weight);

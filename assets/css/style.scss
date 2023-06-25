@@ -1,0 +1,22 @@
+---
+---
+// The front matter above is needed by Jekyll, but it causes linting errors
+// which we can safely ignore.
+$dummy-var-because-of-front-matter: null;
+
+$lm-accent-color: rgb(255, 46, 46);
+$dm-accent-color: rgb(179, 32, 32);
+
+$lm-border-color-03: $lm-accent-color;
+$dm-border-color-03: $dm-accent-color;
+
+$lm-table-header-bg-color: #eaeaea;
+$lm-table-header-border: transparent;
+$lm-table-border-color: transparent;
+$dm-table-header-bg-color: #1f1f1f;
+$dm-table-header-border: transparent;
+$dm-table-border-color: transparent;
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";

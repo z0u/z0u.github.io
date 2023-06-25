@@ -3,8 +3,7 @@
   // Workaround for bug in DarkReader for people who don't have "detect
   // dark theme" enabled.
   border-style: solid;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
+  border-color: transparent;
   margin-top: -5px;
   margin-bottom: -1px;
 
@@ -61,22 +60,22 @@
 
   .wrapper::after {
     content: "";
-    height: calc(1px * #{$z0u-trim-weight});
-    bottom: calc(-1px * #{$z0u-trim-weight});
+    height: calc(1px * #{$trim-weight});
+    bottom: calc(-1px * #{$trim-weight});
     left: 0;
     width: 100%;
     position: absolute;
-    background: #{$z0u-brand-color};
+    background: #{$accent-color};
 
     @media screen and (min-width: $on-large) {
       background: linear-gradient(
         to right,
-        #{$background-color},
+        #{$transparent-bg-color},
         3%,
-        #{$z0u-brand-color} 20%,
-        #{$z0u-brand-color} 80%,
+        #{$accent-color} 20%,
+        #{$accent-color} 80%,
         97%,
-        #{$background-color}
+        #{$transparent-bg-color}
       );
     }
   }
@@ -134,7 +133,7 @@ ul.post-list li::after {
     content: 'x';
     display: inline-block;
     width: 400px;
-    background: linear-gradient(90deg, transparent, 90%, #{$background-color});
+    background: linear-gradient(90deg, #{$transparent-bg-color}, 90%, #{$background-color});
     color: transparent;
     margin-left: -400px;
 }
@@ -290,10 +289,10 @@ img[src$="#fig-lg"] {
   color: #{$text-color} !important;
 }
 .mermaid .marker {
-  fill: #{$z0u-brand-color} !important;
-  stroke: #{$z0u-brand-color} !important;
+  fill: #{$accent-color} !important;
+  stroke: #{$accent-color} !important;
 }
 .mermaid .edgePaths path {
-  stroke: #{$z0u-brand-color} !important;
+  stroke: #{$accent-color} !important;
   stroke-width: 2px !important;
 }
