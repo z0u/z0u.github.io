@@ -43,4 +43,4 @@ S. Cargo is a 3D adventure game about a snail who has been robbed. The player co
 
 I have a decent reputation on StackOverflow (top 5%).
 
-{% darkimg caption:"My profile on Stack Exchange, a network of Q&A sites" light:"https://stackexchange.com/users/flair/124743.png" darksuffix:"?theme=dark" %}
+[{% darkimg caption:"My profile on Stack Exchange, a network of Q&A sites" light:"https://stackexchange.com/users/flair/124743.png" darksuffix:"?theme=dark" %}](https://stackoverflow.com/users/320036/z0r)
