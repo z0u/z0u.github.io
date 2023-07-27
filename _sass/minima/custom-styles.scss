@@ -180,6 +180,18 @@ blockquote {
   }
 }
 
+
+// Footnote references: default `vertical-align: super` causes uneven line height.
+sup[role="doc-noteref"] {
+  vertical-align: top;
+  position: relative;
+  top: -0.2em;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: 150;
+}
+
+
 // Styling for figures. Append #fig-sm etc. to the src URL of Markdown images.
 figure {
   display: flex;
