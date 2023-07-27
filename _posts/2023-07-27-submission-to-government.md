@@ -8,7 +8,7 @@ The Australian Government is currently inviting input on their discussion paper 
 
 It's nice to see the Government taking initiative on this, given the importance and impact of ethics in AI. However, their framing of the discussion suggests that they underestimate the existential risk posed by AI.
 
-Recently, I got together with the AI Safety Melbourne community to work on a response[^aism]. My submission is below.
+Recently, I got together with the AI Safety Melbourne community to work on a response[^aism].
 
 [^disr]: ["Supporting responsible AI", Department of Industry, Science and Resources, 1 June 2023](https://github.com/z0u/z0u.github.io/files/12178334/Safe-and-responsible-AI-in-Australia-discussion-paper.pdf) • [consultation page](https://consult.industry.gov.au/supporting-responsible-ai)
 [^aism]: I'm extremely grateful for the hard work the organisers of AI Safety Melbourne put into preparing notes on each question in the discussion paper. You can find the group [on Facebook](https://www.facebook.com/groups/503645528219169) and [on LessWrong](https://www.lesswrong.com/groups/zwJ7YsikxiibyBKvP).
