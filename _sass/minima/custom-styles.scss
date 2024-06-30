@@ -180,6 +180,11 @@ blockquote {
   }
 }
 
+aside {
+  font-size: 75%;
+  color: var(--minima-brand-color);
+}
+
 
 // Footnote references: default `vertical-align: super` causes uneven line height.
 sup[role="doc-noteref"] {
