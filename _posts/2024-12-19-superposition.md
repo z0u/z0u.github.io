@@ -14,6 +14,8 @@ I can see how distinguishing this type of feature overlap from others has been u
 
 I suspect that a lot of the "interference" that this line of research is trying to deal with would be less of an issue with better normalisation, such as forcing the embeddings onto the hypersphere as in nGPT (Loshchilov et al. 2024) [^ngpt].
 
+This blog is supposed to be a place where I can write about my understanding without worrying too much about accuracy. That said, I think there's a decent chance that I'm still missing something about superposition.
+
 
 [^word2vec]: Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space. In International Conference on Learning Representations (ICLR). https://arxiv.org/pdf/1301.3781
 [^reps]: Mikolov, W.T. Yih, G. Zweig. (2013) Linguistic Regularities in Continuous Space Word Representations. NAACL HLT. https://aclanthology.org/N13-1090.pdf
