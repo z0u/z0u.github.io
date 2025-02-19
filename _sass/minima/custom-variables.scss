@@ -1,11 +1,14 @@
 $lm-shadow-color: rgba(0, 0, 0, 0.1) !default;
 $dm-shadow-color: rgba(0, 0, 0, 0.35) !default;
+$lm-shadow-media: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 20px 4px rgba(0, 0, 0, 0.1), 0 0 40px 10px rgba(0, 0, 0, 0.05);
+$dm-shadow-media: 0 0 0px 1px white;
 $lm-transparent-bg-color: adjust-color($lm-background-color, $alpha: -1);
 $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
 
 @if $color-scheme-auto {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-shadow-media: #{$lm-shadow-media};
     --z0u-accent-color: #{$lm-accent-color};
     --z0u-transparent-bg-color: #{$lm-transparent-bg-color};
     --z0u-trim-weight: 2;
@@ -14,6 +17,7 @@ $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
   @media (prefers-color-scheme: dark) {
     :root {
       --z0u-shadow-color: #{$dm-shadow-color};
+      --z0u-shadow-media: #{$dm-shadow-media};
       --z0u-accent-color: #{$dm-accent-color};
       --z0u-transparent-bg-color: #{$dm-transparent-bg-color};
       --z0u-trim-weight: 1;
@@ -24,6 +28,7 @@ $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
 @else if $color-scheme-dark {
   :root {
     --z0u-shadow-color: #{$dm-shadow-color};
+    --z0u-shadow-media: #{$dm-shadow-media};
     --z0u-accent-color: #{$dm-accent-color};
     --z0u-transparent-bg-color: #{$dm-transparent-bg-color};
     --z0u-trim-weight: 1;
@@ -33,6 +38,7 @@ $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
 @else {
   :root {
     --z0u-shadow-color: #{$lm-shadow-color};
+    --z0u-shadow-media: #{$lm-shadow-media};
     --z0u-accent-color: #{$lm-accent-color};
     --z0u-transparent-bg-color: #{$lm-transparent-bg-color};
     --z0u-trim-weight: 2;
@@ -40,6 +46,7 @@ $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
 }
 
 $shadow-color: var(--z0u-shadow-color);
+$shadow-media: var(--z0u-shadow-media);
 $accent-color: var(--z0u-accent-color);
 $transparent-bg-color: var(--z0u-transparent-bg-color);
 $trim-weight: var(--z0u-trim-weight);
