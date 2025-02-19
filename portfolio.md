@@ -11,7 +11,7 @@ When large language models refuse to help with harmful tasks, attackers sometime
     {% include sparkline-annotation.svg %}
 </div>
 
-This led to the development of a novel visualization technique and metric that makes these patterns immediately obvious to human analysts. The approach reveals how adversarial tokens can be identified by their unexpectedly high surprisal even in contexts where the model is confident about what should come next.
+This led to the development of a novel visualisation technique and metric that makes these patterns immediately obvious to human analysts. The approach reveals how adversarial tokens can be identified by their unexpectedly high surprisal even in contexts where the model is confident about what should come next.
 
 [Read the full report on LessWrong →](https://www.lesswrong.com/posts/Kjo64rSWkFfc3sre5/detecting-out-of-distribution-text-with-surprisal-and)
 
