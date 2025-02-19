@@ -3,6 +3,18 @@ layout: page
 title: Portfolio
 ---
 
+## Detecting out of distribution text with surprisal and entropy
+
+When large language models refuse to help with harmful tasks, attackers sometimes try to confuse them by adding bizarre strings of text called "adversarial suffixes". While reproducing a study on using perplexity to detect these attacks, I discovered that looking at individual tokens reveals a striking pattern: adversarial tokens aren't just surprising — they're _surprisingly surprising_ given their context.
+
+<div style="margin-block: 32px;">
+    {% include sparkline-annotation.svg %}
+</div>
+
+This led to the development of a novel visualization technique and metric that makes these patterns immediately obvious to human analysts. The approach reveals how adversarial tokens can be identified by their unexpectedly high surprisal even in contexts where the model is confident about what should come next.
+
+[Read the full report on LessWrong →](https://www.lesswrong.com/posts/Kjo64rSWkFfc3sre5/detecting-out-of-distribution-text-with-surprisal-and)
+
 ## Building digital spaces for the physical world
 
 {% youtube Zgk_KMia62k %}
