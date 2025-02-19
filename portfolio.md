@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Portfolio
-permalink: /portfolio
 ---
 
 ## Building digital spaces for the physical world
