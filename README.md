@@ -5,7 +5,6 @@ My blog, using [Jekyll and GitHub Pages][jgp].
 Local development:
 
 ```
-cd docs
 bundle install
 bundle exec jekyll serve
 ```

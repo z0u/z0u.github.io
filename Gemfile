@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9.3", group: :jekyll_plugins
+gem "jekyll", "~> 4.4.1", group: :jekyll_plugins
 group :jekyll_plugins do
-  gem "minima", github: 'jekyll/minima', ref: '2863624'
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-figure", "~> 0.1"
+  gem "minima", github: 'jekyll/minima', ref: '5ce4006'
+  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-figure", "~> 0.2.0"
   gem 'jekyll-mermaid', github: 'z0u/jekyll-mermaid', ref: '332ffa5'
 end
 

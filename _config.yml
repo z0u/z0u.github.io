@@ -32,9 +32,22 @@ theme: minima
 minima:
   skin: auto
   social_links:
-    - { platform: github,  user_url: "https://github.com/z0u" }
-    - { platform: linkedin,  user_url: "https://www.linkedin.com/in/alex-fraser-dev" }
-    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/320036/z0r" }
+    - title: GitHub
+      label: My profile on GitHub
+      icon: github
+      url: "https://github.com/z0u"
+    - title: LinkedIn
+      label: My profile on LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/alex-fraser-dev"
+    - title: Stack Overflow
+      label: My profile on Stack Overflow
+      icon: stack-overflow
+      url: "https://stackoverflow.com/users/320036/z0r"
+
+# Saas @import is deprecated https://github.com/jekyll/minima/issues/815
+sass:
+  quiet_deps: true
 
 # https://jekyll-themes.com/jekyll/jekyll-feed
 feed:
