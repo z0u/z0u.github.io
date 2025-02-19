@@ -13,14 +13,14 @@ Customers today expect simple and seamless experiences. How do you create a digi
 
 ## Landblade
 
-{% youtube C_bAQbui9vQ %}
+{% youtube C_bAQbui9vQ zoom:108 %}
 
 Landblade was a web app for performing search and analysis of continent-scale raster and vector data. It was a groundbreaking way to work with geospatial data.
 
 
 ## The Raster Storage Archive
 
-{% youtube QX-47w7Uy4k %}
+{% youtube QX-47w7Uy4k zoom:108 %}
 
 The Raster Storage Archive is a geospatial image storage system and query engine. This video whitepaper introduces the design and motivation of the storage system, and shows how the query engine can be used to analyse large datasets.
 
@@ -34,7 +34,7 @@ A visualisation I developed at VPAC Innovations to demonstrate our engineering c
 
 # S. Cargo
 
-{% youtube ToiUdV42aZY %}
+{% youtube ToiUdV42aZY zoom:102 %}
 
 S. Cargo is a 3D adventure game about a snail who has been robbed. The player controls Cargo, exploring the environment from a snail's point of view. The snail integrates tightly with the environment; wrapping around objects, clibing walls, and brushing grass out of the way. The game focuses on immersion and story telling, with high-quality animation for the non-player characters.
 

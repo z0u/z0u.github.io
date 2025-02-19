@@ -9,9 +9,11 @@ module Jekyll
     @@width = 500
     @@height = 281
 
-    def initialize(name, id, tokens)
+    def initialize(name, params, tokens)
       super
-      @id = id.strip
+      @params = params.split(' ')
+      @id = @params[0].strip
+      @zoom = @params[1]&.match(/zoom:(\d+)/)&.[](1)&.to_i || 100
     end
 
     def resolve_thumbnail(id)
@@ -28,9 +30,12 @@ module Jekyll
 
     def render(context)
       thumbnail_path = resolve_thumbnail(@id)
+      zoom_style = @zoom != 100 ? "transform: scale(#{@zoom}%)" : ""
       <<~HTML
         <div class="videoWrapper">
-          <button onclick="this.nextElementSibling.style.display=null; this.nextElementSibling.src='https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0&autoplay=1'; this.style.display='none'" aria-label="Play"><img src="https://img.youtube.com#{thumbnail_path}"/></button>
+          <button onclick="this.nextElementSibling.style.display=null; this.nextElementSibling.src='https://www.youtube-nocookie.com/embed/#{@id}?modestbranding=1&rel=0&autoplay=1'; this.style.display='none'" aria-label="Play">
+            <img src="https://img.youtube.com#{thumbnail_path}" style="#{zoom_style}"/>
+          </button>
           <iframe style="display: none;" width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
         </div>
       HTML
