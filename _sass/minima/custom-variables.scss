@@ -1,6 +1,6 @@
 $lm-shadow-color: rgba(0, 0, 0, 0.1) !default;
 $dm-shadow-color: rgba(0, 0, 0, 0.35) !default;
-$lm-shadow-media: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 20px 4px rgba(0, 0, 0, 0.1), 0 0 40px 10px rgba(0, 0, 0, 0.05);
+$lm-shadow-media: 0 0 2px rgba(0, 0, 0, 0.1), 0 0 20px 1px rgba(0, 0, 0, 0.05), 0 0 40px 5px rgba(0, 0, 0, 0.01);
 $dm-shadow-media: 0 0 0px 1px white;
 $lm-transparent-bg-color: adjust-color($lm-background-color, $alpha: -1);
 $dm-transparent-bg-color: adjust-color($dm-background-color, $alpha: -1);
