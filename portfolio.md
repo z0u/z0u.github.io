@@ -5,15 +5,25 @@ title: Portfolio
 
 ## mi-ni — AI research project template
 
-mi-ni is a library and template project for running AI experiments. I created it so I could quickly spin up new experiments in a full-featured development environment. mi-ni features:
+`mi-ni` is a library and template project for running AI experiments. I created it so I could quickly spin up new experiments in a full-featured development environment.
 
-- Containerised environment for Python notebooks, both locally and in Codespaces
-- Remote per-function GPU compute in Modal
-- Inline visualization with remote-to-local callbacks
-- AI-assisted coding with Copilot/VS Code
-- Preconfigured for software best practices, including tests, linters, type-checking, and CI/CD.
+```python
+@run.hither
+async def track(metrics):
+    # This function always runs locally
+    history.append(metrics)
+    plot(history)
 
-[Check out the repository on GitHub at z0u/mi-ni](https://github.com/z0u/mi-ni/)
+@run.thither(gpu='L4')
+async def train(epochs: int, track: Callable):
+    # This function always runs remotely
+    for _ in range(epochs):
+        track(train_step())
+```
+
+`mi-ni` provides a containerised environment for Python notebooks, suitable for both local development and Codespaces. It supports remote per-function GPU compute, and enables inline visualization with remote-to-local callbacks. `mi-ni` offers full IDE features within VS Code, including AI-assisted coding with Copilot, and comes preconfigured for software best practices such as tests, linters, type-checking, and CI/CD.
+
+[Check out the repository on GitHub](https://github.com/z0u/mi-ni/)
 
 ## Detecting out of distribution text with surprisal and entropy
 
