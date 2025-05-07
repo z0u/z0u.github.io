@@ -3,6 +3,18 @@ layout: page
 title: Portfolio
 ---
 
+## mi-ni — AI research project template
+
+mi-ni is a library and template project for running AI experiments. I created it so I could quickly spin up new experiments in a full-featured development environment. mi-ni features:
+
+- Containerised environment for Python notebooks, both locally and in Codespaces
+- Remote per-function GPU compute in Modal
+- Inline visualization with remote-to-local callbacks
+- AI-assisted coding with Copilot/VS Code
+- Preconfigured for software best practices, including tests, linters, type-checking, and CI/CD.
+
+[Check out the repository on GitHub at z0u/mi-ni](https://github.com/z0u/mi-ni/)
+
 ## Detecting out of distribution text with surprisal and entropy
 
 When large language models refuse to help with harmful tasks, attackers sometimes try to confuse them by adding bizarre strings of text called "adversarial suffixes". While reproducing a study on using perplexity to detect these attacks, I discovered that looking at individual tokens reveals a striking pattern: adversarial tokens aren't just surprising — they're _surprisingly surprising_ given their context.
