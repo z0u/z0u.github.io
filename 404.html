@@ -23,3 +23,21 @@ layout: base
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<script>
+  // Redirect /ex-color-transformer paths to /ex-preppy
+  (function() {
+    var path = window.location.pathname;
+    
+    // Check if the path starts with /ex-color-transformer
+    if (path === '/ex-color-transformer' || path === '/ex-color-transformer/') {
+      // Redirect to /ex-preppy (preserving trailing slash if present)
+      var newPath = path.replace('/ex-color-transformer', '/ex-preppy');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    } else if (path.startsWith('/ex-color-transformer/')) {
+      // Handle paths that start with /ex-color-transformer/ and have additional segments
+      var newPath = path.replace('/ex-color-transformer/', '/ex-preppy/');
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
+  })();
+</script>
