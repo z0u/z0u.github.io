@@ -3,7 +3,7 @@
 {
 	"name": "Ruby",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/ruby:3-3.4-trixie",
+	"image": "mcr.microsoft.com/devcontainers/ruby:4",
 	"mounts": [
 		// Persist some profile directories. Can't mount the entire home directory because of permissions issues.
 		"source=state,target=/home/vscode/state,type=volume",
