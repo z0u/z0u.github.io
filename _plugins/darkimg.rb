@@ -1,3 +1,5 @@
+require 'cgi'
+
 module Jekyll
   class DarkImgTag < Liquid::Tag
     def initialize(tag_name, markup, parse_context)
@@ -6,8 +8,6 @@ module Jekyll
     end
 
     def render(context)
-      site = context.registers[:site]
-      converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
       markup = Liquid::Template.parse(@markup).render(context)
 
       attributes = {}
@@ -15,21 +15,16 @@ module Jekyll
         attributes[key] = value
       end
 
-      caption = attributes["caption"]&.gsub!(/\A"|"\Z/, "") || ""
-      lightsrc = attributes["light"]&.gsub!(/\A"|"\Z/, "")
-      darksrc = attributes["dark"]&.gsub!(/\A"|"\Z/, "")
+      caption = CGI.escapeHTML(attributes["caption"]&.gsub(/\A"|"\Z/, "") || "")
+      lightsrc = attributes["light"]&.gsub(/\A"|"\Z/, "")
+      darksrc = attributes["dark"]&.gsub(/\A"|"\Z/, "")
 
       if darksrc.nil?
-        darksuffix = attributes["darksuffix"]&.gsub!(/\A"|"\Z/, "") || ""
+        darksuffix = attributes["darksuffix"]&.gsub(/\A"|"\Z/, "") || ""
         darksrc = "#{lightsrc}#{darksuffix}"
       end
 
-      lightimg = converter.convert("![#{caption}](#{lightsrc})")
-      darkimg = converter.convert("![#{caption}](#{darksrc})")
-      lighttag = "<span class=\"if-light\">#{lightimg}</span>"
-      darktag = "<span class=\"if-dark\">#{darkimg}</span>"
-
-      "#{lighttag}#{darktag}".gsub(/<\/?p[^>]*>/, "")
+      "<picture><source srcset=\"#{darksrc}\" media=\"(prefers-color-scheme: dark)\"><img src=\"#{lightsrc}\" alt=\"#{caption}\"></picture>"
     end
   end
 end

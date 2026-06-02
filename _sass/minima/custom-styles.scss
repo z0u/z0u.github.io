@@ -264,18 +264,6 @@ img[src$="#fig-lg"] {
   }
 }
 
-.if-dark {
-  display: none;
-}
-@media (prefers-color-scheme: dark) {
-  .if-light {
-    display: none;
-  }
-  .if-dark {
-    display: unset;
-  }
-}
-
 // Mermaid figure styles, dynamic light / dark
 .mermaid:not([data-processed="true"]) {
   visibility: hidden;
