@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/jekyll/minima.git
-  revision: 5ce4006d175e6e5278bb63a0aad1a85e3bf2370b
-  ref: 5ce4006
+  revision: 4de322363fca5927e6f4012cb94f6dad69ab5e6c
+  ref: 4de3223
   specs:
     minima (3.0.0.dev)
       jekyll (>= 3.5, < 5.0)
@@ -10,8 +10,8 @@ GIT
 
 GIT
   remote: https://github.com/z0u/jekyll-mermaid.git
-  revision: 332ffa51043272cb20a6d918c4b995d9d319be58
-  ref: 332ffa5
+  revision: a60a104c955930049164a4b4eb5de79c50c29454
+  ref: a60a104
   specs:
     jekyll-mermaid (1.0.0)
 
@@ -29,8 +29,12 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
+    google-protobuf (4.30.2-aarch64-linux)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.30.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
@@ -87,6 +91,8 @@ GEM
     rexml (3.4.1)
     rouge (4.5.2)
     safe_yaml (1.0.5)
+    sass-embedded (1.87.0-aarch64-linux-gnu)
+      google-protobuf (~> 4.30)
     sass-embedded (1.87.0-x86_64-linux-gnu)
       google-protobuf (~> 4.30)
     terminal-table (3.0.2)
@@ -95,6 +101,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES

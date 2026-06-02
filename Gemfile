@@ -2,10 +2,10 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.4.1", group: :jekyll_plugins
 group :jekyll_plugins do
-  gem "minima", github: 'jekyll/minima', ref: '5ce4006'
+  gem "minima", github: 'jekyll/minima', ref: '4de3223'
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-figure", "~> 0.2.0"
-  gem 'jekyll-mermaid', github: 'z0u/jekyll-mermaid', ref: '332ffa5'
+  gem 'jekyll-mermaid', github: 'z0u/jekyll-mermaid', ref: 'a60a104'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
