@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ruby
+{
+	"name": "Ruby",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/ruby:3-3.4-trixie",
+	"mounts": [
+		// Persist some profile directories. Can't mount the entire home directory because of permissions issues.
+		"source=state,target=/home/vscode/state,type=volume",
+		"source=claude-skills,target=/home/vscode/.claude/skills,type=volume",
+		"source=ssh,target=/home/vscode/ssh,type=volume"
+	],
+	"containerEnv": {
+		"HISTFILE": "/home/vscode/state/.zsh_history"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
+		},
+		"ghcr.io/devcontainer-community/devcontainer-features/jonas-tig:1": {},
+		// Agent-friendly tools
+		"ghcr.io/jsburckhardt/devcontainer-features/bat:1": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/fd:1": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/fzf:1": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/ripgrep:1": {}
+	},
+	// Mounts are owned by root by default.
+	"postStartCommand": "sudo chown -R vscode:vscode /home/vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Anthropic.claude-code",
+				"bierner.github-markdown-preview",
+				"esbenp.prettier-vscode",
+				"OliverKovacs.word-count",
+				"mechatroner.rainbow-csv"
+			]
+		}
+	}
+}

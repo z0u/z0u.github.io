@@ -1,0 +1,34 @@
+{
+  "features": {
+    "ghcr.io/devcontainer-community/devcontainer-features/jonas-tig:1": {
+      "version": "1.0.2",
+      "resolved": "ghcr.io/devcontainer-community/devcontainer-features/jonas-tig@sha256:5ffe260917084e40fa0e4a7812b471e9a9df1b80134af77243591a37a79ac642",
+      "integrity": "sha256:5ffe260917084e40fa0e4a7812b471e9a9df1b80134af77243591a37a79ac642"
+    },
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "version": "2.5.9",
+      "resolved": "ghcr.io/devcontainers/features/common-utils@sha256:cb0c4d3c276f157eed17935747e364178d75fee17f55c4e129966f64633deb3a",
+      "integrity": "sha256:cb0c4d3c276f157eed17935747e364178d75fee17f55c4e129966f64633deb3a"
+    },
+    "ghcr.io/jsburckhardt/devcontainer-features/bat:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/jsburckhardt/devcontainer-features/bat@sha256:47c8b08751999d00265363e4903c60ceeea494ebfaccd6aceb1a289f183e7894",
+      "integrity": "sha256:47c8b08751999d00265363e4903c60ceeea494ebfaccd6aceb1a289f183e7894"
+    },
+    "ghcr.io/jsburckhardt/devcontainer-features/fd:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/jsburckhardt/devcontainer-features/fd@sha256:ad1a09751358ab1528fb2d2796170c2279dc80aa69cbdd9826fb9678ed04c30f",
+      "integrity": "sha256:ad1a09751358ab1528fb2d2796170c2279dc80aa69cbdd9826fb9678ed04c30f"
+    },
+    "ghcr.io/jsburckhardt/devcontainer-features/fzf:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/jsburckhardt/devcontainer-features/fzf@sha256:d7502a05c9d9f332425ced59dcd36537774f55e4e5ad7c0ee8b45d7c5a168c4a",
+      "integrity": "sha256:d7502a05c9d9f332425ced59dcd36537774f55e4e5ad7c0ee8b45d7c5a168c4a"
+    },
+    "ghcr.io/jsburckhardt/devcontainer-features/ripgrep:1": {
+      "version": "1.0.0",
+      "resolved": "ghcr.io/jsburckhardt/devcontainer-features/ripgrep@sha256:e24c026e6c06d7d2ccbc802ca0f788d57af6105e929f92270c206dfd8b296669",
+      "integrity": "sha256:e24c026e6c06d7d2ccbc802ca0f788d57af6105e929f92270c206dfd8b296669"
+    }
+  }
+}
